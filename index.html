@@ -17,8 +17,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Golden State Drone Services</title>
@@ -155,7 +155,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md">
-                    <div id="map"></div>
+                    <div id="map" style='width: 600px; height: 350px;'></div>
                 </div>
                 <div class="col-md p-5">
                     <h2>Located on the central coast of California</h2>
@@ -433,15 +433,15 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoiY29yeXVwaGFtIiwiYSI6ImNsMm1yMHh2ZjBmd2YzY3A3MXBkOHN5cnMifQ.Qn8hyilOLZh9S4V7gbYwwQ';
-                const map = new mapboxgl.Map({
-                    container: 'map', // container ID
-                    style: 'mapbox://styles/coryupham/cl2mr8q4a000q14ojxfch7754', // style URL
-                    center: [35.003, -119.824], // starting position [lng, lat]
-                    zoom: 7.99 // starting zoom
-                });
-        </script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY29yeXVwaGFtIiwiYSI6ImNsMm1zNWF6YzB3a3gzY3JxNW9vcWttdHIifQ.WHf1QeO2tPdGsXHvQyWhvA';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/coryupham/cl2mr8q4a000q14ojxfch7754',
+        center: [-119.967, 34.900],
+        zoom: 7.30,
+    });
+</script>
 
 </body>
 
