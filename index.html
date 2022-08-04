@@ -1,295 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8S4363R6M"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L8S4363R6M"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-L8S4363R6M');
+      gtag("config", "G-L8S4363R6M");
     </script>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favcon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favcon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favcon//favicon-16x16.png">
-    <link rel="manifest" href="img/favcon//site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favcon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favcon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favcon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favcon//site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <title>Golden State Drone Services</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container">
-            <a href="#" class="navbar-brand">
-                <!-- <img src="img/golden-state.png" alt="gslogo" > -->
-                <img src="img/logo/goldenstate.svg" width="140" height="80" alt="gslogo">
-            </a>
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <!-- <img src="img/golden-state.png" alt="gslogo" > -->
+          <img
+            src="img/logo/goldenstate.svg"
+            width="140"
+            height="80"
+            alt="gslogo"
+          />
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="https://gsdroneservices.com/" class="nav-link">Home</a>
-                    </li>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="https://gsdroneservices.com/" class="nav-link">Home</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link">Services</a>
-                    </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#contact">Contact</a>
-                    </li>
-
-                </ul>
-            </div>
+            <li class="nav-item">
+              <a
+                href=""
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
-
+      </div>
     </nav>
 
     <!-- Full Page Image Header with Vertically Centered Content -->
     <header class="masthead">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 text-center text-light">
-                    <h1 class="display-1" font><B>The Sky's The Limit</B></h1>
-                    <h3>Aerial Services For Every Industry</h3>
-                </div>
-            </div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center text-light">
+            <h1 class="display-1" font><b>The Sky's The Limit</b></h1>
+            <h3>Aerial Services For Every Industry</h3>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- SOLUTIONS FOR EVERY SIZED PROJECT -->
 
     <section id="learn" class="p-5">
-        <div class="container pt-5">
-            <div class="row alight-items-center justify-content-between">
-                <div class="col-md">
-                    <h1>SOLUTIONS FOR EVERY</h1>
-                    <h1>SIZED PROJECT</h1>
-                    <h4 style="color:gold">Serving the Central Coast Since 2016</h4>
-                    <p>Golden State Drone Services has the solutions and expertise to help you capture beautiful aerial
-                        images and data. We provide pricing and packages for every industry and for projects of every
-                        size.
-                        We are proud to be servicing the central coast of California</p>
-                    <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#contact">
-                        Get a free quote!
-                    </button>
-                </div>
-                <div class="col-md">
-                    <div class="col-md pt-4">
-                        <img src="img/Mavic.jpg" class="img-fluid" alt="Flying Drone" />
-                    </div>
-                    <img src="i" class="img-fluid" alt="">
-                </div>
+      <div class="container pt-5">
+        <div class="row alight-items-center justify-content-between">
+          <div class="col-md">
+            <h1>SOLUTIONS FOR EVERY</h1>
+            <h1>SIZED PROJECT</h1>
+            <h4 style="color: gold">Serving the Central Coast Since 2016</h4>
+            <p>
+              Golden State Drone Services has the solutions and expertise to
+              help you capture beautiful aerial images and data. We provide
+              pricing and packages for every industry and for projects of every
+              size. We are proud to be servicing the central coast of California
+            </p>
+            <button
+              class="btn btn-primary mt-3"
+              data-bs-toggle="modal"
+              data-bs-target="#contact"
+            >
+              Get a free quote!
+            </button>
+          </div>
+          <div class="col-md">
+            <div class="col-md pt-4">
+              <img src="img/Mavic.jpg" class="img-fluid" alt="Flying Drone" />
             </div>
+            <img src="i" class="img-fluid" alt="" />
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- Boxes -->
     <section class="p-5 bg-dark text-light text-center" id="services">
-        <h1>SERVICES</h1>
-        <h4 style="color:gold">Two Day Turnaround On Most Projects!</h4>
-        <div class="container p-5">
-            <div class="row text-center g-4">
-                <div class="col-md">
-                    <div class="card bg-light text-dark">
-                        <!-- <img src="..." class="card-img-top" alt="..."> -->
-                        <div class="card-body text-center">
-                            <div class="h1"><i class="bi bi-camera"></i></div>
-                            <h5 class="card-title">Still Photography</h5>
-                            <p class="card-text">Still photography packages starting as low as $50 for 8 images.</p>
-                            <a href="#" class="btn btn-warning">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-light text-dark">
-                        <!-- <img src="..." class="card-img-top" alt="..."> -->
-                        <div class="card-body text-center">
-                            <div class="h1"><i class="bi bi-camera-reels"></i></div>
-                            <h5 class="card-title">Cinematography</h5>
-                            <p class="card-text">Get stunning 4k 60fps video of a property to highlight just how amazing the location is!</p>
-                            <a href="#" class="btn btn-warning">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-light text-dark">
-                        <!-- <img src="..." class="card-img-top" alt="..."> -->
-                        <div class="card-body text-center">
-                            <div class="h1"><i class="bi bi-badge-4k"></i></div>
-                            <h5 class="card-title">4K Video</h5>
-                            <p class="card-text"></p>
-                            <a href="#" class="btn btn-warning">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
+      <h1>SERVICES</h1>
+      <h4 style="color: gold">Two Day Turnaround On Most Projects!</h4>
+      <div class="container p-5">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-light text-dark">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body text-center">
+                <div class="h1"><i class="bi bi-camera"></i></div>
+                <h5 class="card-title">Still Photography</h5>
+                <p class="card-text">
+                  Still photography packages starting as low as $50 for 8
+                  images.
+                </p>
+                <a href="#" class="btn btn-warning">Go somewhere</a>
+              </div>
             </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-light text-dark">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body text-center">
+                <div class="h1"><i class="bi bi-camera-reels"></i></div>
+                <h5 class="card-title">Cinematography</h5>
+                <p class="card-text">
+                  Get stunning 4k 60fps video of a property to highlight just
+                  how amazing the location is!
+                </p>
+                <a href="#" class="btn btn-warning">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-light text-dark">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body text-center">
+                <div class="h1"><i class="bi bi-badge-4k"></i></div>
+                <h5 class="card-title">4K Video</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-warning">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Learn Sections -->
     <section id="portfolio" class="p-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md  d-none d-sm-block">
-                    <div id="map" style='width: 600px; height: 350px;'></div>
-                </div>
-                <div class="col-md p-5">
-                    <h2>Located on the central coast of California</h2>
-                    <p class="lead">
-                        We proudly service the central coast from as far south as Santa Barbara to all the way up north
-                        to Paso Robles!
-                    </p>
-                    <p>
-                        The central coast provides the perfect back drop to all areal images weather it be the beautiful
-                        pacific ocean or the rolling hills of vinyeards. Getting areaial images of your propert add
-                        significant value to any project or listing.
-                    </p>
-                    <a href="#" class="btn btn-light mt-3">
-                        <i class="bi bi-chevron-right"></i> Read More
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md d-none d-sm-block">
+            <div id="map" style="width: 600px; height: 350px"></div>
+          </div>
+          <div class="col-md p-5">
+            <h2>Located on the central coast of California</h2>
+            <p class="lead">
+              We proudly service the central coast from as far south as Santa
+              Barbara to all the way up north to Paso Robles!
+            </p>
+            <p>
+              The central coast provides the perfect back drop to all areal
+              images weather it be the beautiful pacific ocean or the rolling
+              hills of vinyeards. Getting areaial images of your propert add
+              significant value to any project or listing.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="learn" class="p-5 bg-dark text-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5">
-                    <h2>AG Services</h2>
-                    <p class="lead">
-                        Get a detailed map of your field, conduct stand counts, identify variability, and make
-                        data-informed
-                        recommendations.
-                    </p>
-                    <p>
-                        Before even entering the field, identify possible threats to yield from the cab of your truck.
-                        Scout your field in minutes to find risks to yield before they become an issue. In an automatic
-                        report, quantify and tag
-                        concerns, then track the impact of treatment strategies over the course of the season.
-                    </p>
-                    <a href="#" class="btn btn-light mt-3">
-                        <i class="bi bi-chevron-right"></i> Read More
-                    </a>
-                </div>
-                <div class="col-md">
-                    <img src="img/crops1.jpg" class="img-fluid" alt="field" />
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>AG Services</h2>
+            <p class="lead">
+              Get a detailed map of your field, conduct stand counts, identify
+              variability, and make data-informed recommendations.
+            </p>
+            <p>
+              Before even entering the field, identify possible threats to yield
+              from the cab of your truck. Scout your field in minutes to find
+              risks to yield before they become an issue. In an automatic
+              report, quantify and tag concerns, then track the impact of
+              treatment strategies over the course of the season.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="img/crops1.jpg" class="img-fluid" alt="field" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Question Accordion -->
     <section id="questions" class="p-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-            <div class="accordion accordion-flush" id="questions">
-                <!-- Item 1 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-one">
-                            Why Hire A Drone Pilot?
-                        </button>
-                    </h2>
-                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                            Aerial images of any property or construction are highly valuable. Thats why hiring a prfessional, FAA licensed, and insured drone pilot is so important! Having your bases covered 
-                        </div>
-                    </div>
-                </div>
-                <!-- Item 2 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-two">
-                            What Is Included?
-                        </button>
-                    </h2>
-                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                            No matter what package you select, you get a dedicated and professional FAA part 107 certified pilot and rights to all content which may include high-resolution aerial images as well as HD 4K video.
-                        </div>
-                    </div>
-                </div>
-                <!-- Item 3 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-three">
-                            How Long Does It Take?
-                        </button>
-                    </h2>
-                    <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                            Most of our porjects have a two day turnaround time from completion of the flight. However, more advanced/complex projects that involve a large number of images or detailed photo editing may take longer. 
-                        </div>
-                    </div>
-                </div>
-                <!-- Item 4 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-four">
-                            What Is Photogrammetry?
-                        </button>
-                    </h2>
-                    <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                            Photogrammetry is a technique to obtain reliable data of real-world objects in the
-                            environment by creating 3D models
-                            from photos. By combining enough overlapping images of the same features, photogrammetry
-                            software can be used to
-                            generate
-                            photorealistic 3D representations of topographic surfaces. virtually document every stage of
-                            your construction project,
-                            capture every angle of your asset, or visualize your entire field.
-                        </div>
-                    </div>
-                </div>
-                <!-- Item 5 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-five">
-                            Do you offer other photography/aerial services?
-                        </button>
-                    </h2>
-                    <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                           Yes! We will work with you to deliver any and all aerial data you may need.
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                Why Hire A Drone Pilot?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Aerial images of any property or construction are highly
+                valuable. Thats why hiring a prfessional, FAA licensed, and
+                insured drone pilot is so important! Having your bases covered
+              </div>
             </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                What Is Included?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                No matter what package you select, you get a dedicated and
+                professional FAA part 107 certified pilot and rights to all
+                content which may include high-resolution aerial images as well
+                as HD 4K video.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                How Long Does It Take?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Most of our porjects have a two day turnaround time from
+                completion of the flight. However, more advanced/complex
+                projects that involve a large number of images or detailed photo
+                editing may take longer.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                What Is Photogrammetry?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Photogrammetry is a technique to obtain reliable data of
+                real-world objects in the environment by creating 3D models from
+                photos. By combining enough overlapping images of the same
+                features, photogrammetry software can be used to generate
+                photorealistic 3D representations of topographic surfaces.
+                virtually document every stage of your construction project,
+                capture every angle of your asset, or visualize your entire
+                field.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                Do you offer other photography/aerial services?
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Yes! We will work with you to deliver any and all aerial data
+                you may need.
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- <section id="instructors" class="p-5 bg-primary">
@@ -357,61 +459,82 @@
 
     <!-- Footer -->
     <footer class="p-5 bg-dark text-white text-center position-relative">
-        <div class="container">
-            <p class="lead">Copyright &copy; 2022 Golden State Drone Services</p>
-            <p>Some images provided by unsplash.com</p>
+      <div class="container">
+        <p class="lead">Copyright &copy; 2022 Golden State Drone Services</p>
+        <p>Some images provided by unsplash.com</p>
 
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1"></i>
-            </a>
-        </div>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
     </footer>
 
     <!-- Modal -->
-    <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">Contact Us!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="lead">Fill out this form and we will get back to you ASAP!</p>
+    <div
+      class="modal fade"
+      id="contact"
+      tabindex="-1"
+      aria-labelledby="contactLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Us!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">
+              Fill out this form and we will get back to you ASAP!
+            </p>
 
-                    <form name="contact" method="POST" data-netlify="true">
-                        <div class="mb-3">
-                            <label for="first-name" class="col-form-label">
-                                Name:
-                            </label>
-                            <input type="text" class="form-control" name="name" id="name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="col-form-label">Email:</label>
-                            <input type="email" class="form-control" name="email" id="email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="first-name" class="col-form-label">
-                                Notes:
-                            </label>
-                            <input type="text" class="form-control" name="notes" id="notes">
-                        </div>
-                        <div class="field">
-                            <div data-netlify-recaptcha="true"></div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary actions">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-
+            <form name="contact" method="POST" data-netlify="true">
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label"> Name: </label>
+                <input type="text" class="form-control" name="name" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label"> Notes: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="notes"
+                  id="notes"
+                />
+              </div>
+              <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary actions">
+                    Submit
+                  </button>
                 </div>
-            </div>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiY29yeXVwaGFtIiwiYSI6ImNsMm1zNWF6YzB3a3gzY3JxNW9vcWttdHIifQ.WHf1QeO2tPdGsXHvQyWhvA';
@@ -423,7 +546,5 @@
         });
         map.scrollZoom.disable();
     </script> -->
-
-</body>
-
+  </body>
 </html>
