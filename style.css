@@ -104,10 +104,3 @@
   -ms-flex-item-align: auto;
   align-self: auto;
 }
-
-@media (max-width: 768px) {
-  .card {
-    width: 18rem;
-    margin-right: 20px;
-  }
-}
